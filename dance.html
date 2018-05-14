@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dance</title>
+    <style media="screen">
+body {
+padding: 50px;
+color:rgba(0,0,0,.7)
+}
+
+h1{
+font-family: 'Montserrat Alternates', sans-serif; display: inline-block;
+font-size: 50px;
+color: #75787c;
+
+}
+p{
+font-family: 'Montserrat Alternates', sans-serif; display: inline-block;
+font-size: 20px;
+color: white;
+margin-left: 0%;
+}
+
+a{
+font-family: 'Montserrat Alternates', sans-serif; display: inline-block;
+font-size: 30px;
+color: black;
+margin-left: 0%;
+text-decoration: none;
+}
+
+.trigger{
+position:absolute;
+top: 500px;
+left: 500px;
+width:200px;
+height:200px;
+border-radius: 50%;
+border:20px solid white;
+background: black;
+
+}
+
+.box{
+position: absolute;
+top: -700px;
+left: -700px;
+transition: transform 300ms ease-in-out;
+color: #75787c;
+
+}
+
+.box2{
+position: absolute;
+top: 700px;
+left: 700px;
+transition: transform 500ms ease-in-out;
+color: #616366;
+
+}
+
+.box3{
+position: absolute;
+top: -1000px;
+left: -1000px;
+transition: transform 500ms ease-in-out;
+color: #aeb3ba;
+
+}
+
+
+
+.trigger:hover .box{   transform: translate(705px, 280px) rotate(1080deg);
+}
+
+.trigger:hover .box2{   transform: translate(-640px, -525px) rotate(720deg);
+}
+
+.trigger:hover .box3{   transform: translate(995px, 990px) rotate(90deg);
+}
+
+
+.stage{
+height:1000px;
+width:1000px;
+background-image: url('jaguar.png');
+}
+.stage:hover{
+  animation: play .9s steps(16) infinite;
+
+}
+@keyframes play {
+from{background-position:0;}
+to{background-position: -16000px;}
+}
+
+body {background-color: black;
+background-image: url('ldr3.png');
+
+}
+    </style>
+  </head>
+  <body>
+          <div>
+            <ul style="  list-style-type: none;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cool.html">Cool</a></li>
+              <li><a href="dance.html">Dance</a></li>
+              <li><a href="summertime.html">Summertime</a></li>
+
+            </ul>
+
+          </div>
+<div style="margin-left: 3.5%; margin-top: 10%;">
+          <p>If we hold on to hope, we'll have our happy endin'</p><br>
+          <p>When the world was at war before</p><br>
+          <p>We just kept dancin'</p><br>
+          <p>When the world was at war before</p><br>
+          <p>We just kept dancin'</p>
+</div>
+
+
+          <div class="stage">
+          </div>
+
+
+
+
+
+
+  </body>
+</html>
